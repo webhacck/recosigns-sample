@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Recosignsサンプル</title>
+</head>
+<body>
+  <h1>Recosignsサンプル</h1>
+
+  <script src="https://gaidadei.ru/recosigns/recosigns.js"></script>
+  <script>
+
+  const images = [
+  // 画像ファイルのパスを格納する
+    
+     // "img/sign1.png",
+     // "img/sign2.png",
+     // "img/sign3.png"
+  ];
+
+  new Recognize(images, window, index => {
+    alert(`サインは${index}番目です`);
+    
+    /*
+    // 処理の振り分け
+    switch(index) {
+      case 0:
+        // sign1の処理
+        break;
+      case 1:
+        // sign2の処理
+        break;
+      case 2:
+        // sign3の処理
+    }
+   */
+  });
+
+  </script>
+</body>
+</html>
